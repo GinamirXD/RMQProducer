@@ -20,6 +20,7 @@ namespace Producer
         public string Port { get; private set; }
         public string URI { get; private set; }
         public string Exchange {  get; private set; }
+        public string ExchangeType { get; private set; }
 
         public FormSettings()
         {
@@ -60,6 +61,7 @@ namespace Producer
             Port = textBoxPort.Text;
             URI = textBoxConnectionURI.Text;
             Exchange = textBoxExchange.Text;
+            ExchangeType = comboBoxExchangeType.SelectedItem.ToString();
 
             Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
             config.AppSettings.Settings["ConnectionType"].Value = ConnectionType;
@@ -68,6 +70,7 @@ namespace Producer
             config.AppSettings.Settings["Port"].Value = Port;
             config.AppSettings.Settings["URI"].Value = URI;
             config.AppSettings.Settings["Exchange"].Value = Exchange;
+            config.AppSettings.Settings["ExchangeType"].Value = ExchangeType;
             config.Save(ConfigurationSaveMode.Modified);
             ConfigurationManager.RefreshSection("appSettings");
 

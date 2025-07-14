@@ -1,4 +1,6 @@
-﻿namespace Producer
+﻿using System.Windows.Forms;
+
+namespace Producer
 {
     partial class FormSettings
     {
@@ -34,6 +36,8 @@
             this.textBoxPort = new System.Windows.Forms.TextBox();
             this.labelExchange = new System.Windows.Forms.Label();
             this.textBoxExchange = new System.Windows.Forms.TextBox();
+            this.comboBoxExchangeType = new System.Windows.Forms.ComboBox();
+            this.exchangeTypeLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // radioVirtualHost
@@ -42,10 +46,10 @@
             this.radioVirtualHost.Checked = true;
             this.radioVirtualHost.Location = new System.Drawing.Point(30, 20);
             this.radioVirtualHost.Name = "radioVirtualHost";
-            this.radioVirtualHost.Size = new System.Drawing.Size(230, 20);
+            this.radioVirtualHost.Size = new System.Drawing.Size(188, 20);
             this.radioVirtualHost.TabIndex = 0;
             this.radioVirtualHost.TabStop = true;
-            this.radioVirtualHost.Text = Strings.radioVirtualHost;
+            this.radioVirtualHost.Text = global::Producer.Strings.radioVirtualHost;
             this.radioVirtualHost.CheckedChanged += new System.EventHandler(this.radioVirtualHost_CheckedChanged);
             // 
             // radioUri
@@ -53,14 +57,14 @@
             this.radioUri.AutoSize = true;
             this.radioUri.Location = new System.Drawing.Point(228, 20);
             this.radioUri.Name = "radioUri";
-            this.radioUri.Size = new System.Drawing.Size(188, 20);
+            this.radioUri.Size = new System.Drawing.Size(146, 20);
             this.radioUri.TabIndex = 1;
-            this.radioUri.Text = Strings.radioUri;
+            this.radioUri.Text = global::Producer.Strings.radioUri;
             // 
             // labelConnection1
             // 
             this.labelConnection1.AutoSize = true;
-            this.labelConnection1.Location = new System.Drawing.Point(30, 60);
+            this.labelConnection1.Location = new System.Drawing.Point(25, 60);
             this.labelConnection1.Name = "labelConnection1";
             this.labelConnection1.Size = new System.Drawing.Size(75, 16);
             this.labelConnection1.TabIndex = 2;
@@ -68,7 +72,7 @@
             // 
             // textBoxConnection1
             // 
-            this.textBoxConnection1.Location = new System.Drawing.Point(30, 80);
+            this.textBoxConnection1.Location = new System.Drawing.Point(28, 80);
             this.textBoxConnection1.Name = "textBoxConnection1";
             this.textBoxConnection1.Size = new System.Drawing.Size(346, 22);
             this.textBoxConnection1.TabIndex = 3;
@@ -93,17 +97,17 @@
             // 
             // buttonSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(288, 269);
+            this.buttonSave.Location = new System.Drawing.Point(283, 301);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(91, 30);
             this.buttonSave.TabIndex = 4;
-            this.buttonSave.Text = Strings.buttonSave;
+            this.buttonSave.Text = global::Producer.Strings.buttonSave;
             this.buttonSave.Click += new System.EventHandler(this.ButtonSave_Click);
             // 
             // labelHost
             // 
             this.labelHost.AutoSize = true;
-            this.labelHost.Location = new System.Drawing.Point(30, 160);
+            this.labelHost.Location = new System.Drawing.Point(25, 200);
             this.labelHost.Name = "labelHost";
             this.labelHost.Size = new System.Drawing.Size(78, 16);
             this.labelHost.TabIndex = 1;
@@ -111,7 +115,7 @@
             // 
             // textBoxHost
             // 
-            this.textBoxHost.Location = new System.Drawing.Point(33, 179);
+            this.textBoxHost.Location = new System.Drawing.Point(28, 219);
             this.textBoxHost.Name = "textBoxHost";
             this.textBoxHost.Size = new System.Drawing.Size(346, 22);
             this.textBoxHost.TabIndex = 0;
@@ -119,7 +123,7 @@
             // labelPort
             // 
             this.labelPort.AutoSize = true;
-            this.labelPort.Location = new System.Drawing.Point(30, 213);
+            this.labelPort.Location = new System.Drawing.Point(25, 244);
             this.labelPort.Name = "labelPort";
             this.labelPort.Size = new System.Drawing.Size(34, 16);
             this.labelPort.TabIndex = 5;
@@ -127,7 +131,7 @@
             // 
             // textBoxPort
             // 
-            this.textBoxPort.Location = new System.Drawing.Point(33, 232);
+            this.textBoxPort.Location = new System.Drawing.Point(28, 263);
             this.textBoxPort.Name = "textBoxPort";
             this.textBoxPort.Size = new System.Drawing.Size(346, 22);
             this.textBoxPort.TabIndex = 6;
@@ -135,7 +139,7 @@
             // labelExchange
             // 
             this.labelExchange.AutoSize = true;
-            this.labelExchange.Location = new System.Drawing.Point(30, 109);
+            this.labelExchange.Location = new System.Drawing.Point(25, 105);
             this.labelExchange.Name = "labelExchange";
             this.labelExchange.Size = new System.Drawing.Size(70, 16);
             this.labelExchange.TabIndex = 7;
@@ -143,14 +147,40 @@
             // 
             // textBoxExchange
             // 
-            this.textBoxExchange.Location = new System.Drawing.Point(30, 129);
+            this.textBoxExchange.Location = new System.Drawing.Point(28, 124);
             this.textBoxExchange.Name = "textBoxExchange";
             this.textBoxExchange.Size = new System.Drawing.Size(346, 22);
             this.textBoxExchange.TabIndex = 8;
             // 
+            // comboBoxExchangeType
+            // 
+            this.comboBoxExchangeType.FormattingEnabled = true;
+            this.comboBoxExchangeType.Location = new System.Drawing.Point(28, 173);
+            this.comboBoxExchangeType.Name = "comboBoxExchangeType";
+            this.comboBoxExchangeType.Size = new System.Drawing.Size(346, 24);
+            this.comboBoxExchangeType.TabIndex = 9;
+            this.comboBoxExchangeType.Items.AddRange(new object[] {
+                                                                "direct",
+                                                                "fanout",
+                                                                "topic",
+                                                                "headers"});
+            this.comboBoxExchangeType.DropDownStyle = ComboBoxStyle.DropDownList;
+            this.comboBoxExchangeType.SelectedIndex = 0;
+            // 
+            // exchangeTypeLabel
+            // 
+            this.exchangeTypeLabel.AutoSize = true;
+            this.exchangeTypeLabel.Location = new System.Drawing.Point(25, 154);
+            this.exchangeTypeLabel.Name = "exchangeTypeLabel";
+            this.exchangeTypeLabel.Size = new System.Drawing.Size(44, 16);
+            this.exchangeTypeLabel.TabIndex = 10;
+            this.exchangeTypeLabel.Text = "Exchange type:";
+            // 
             // FormSettings
             // 
-            this.ClientSize = new System.Drawing.Size(407, 311);
+            this.ClientSize = new System.Drawing.Size(404, 362);
+            this.Controls.Add(this.exchangeTypeLabel);
+            this.Controls.Add(this.comboBoxExchangeType);
             this.Controls.Add(this.textBoxExchange);
             this.Controls.Add(this.labelExchange);
             this.Controls.Add(this.textBoxPort);
@@ -169,7 +199,7 @@
             this.MinimizeBox = false;
             this.Name = "FormSettings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = Strings.connectionSettings;
+            this.Text = "Connection settings";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -188,5 +218,7 @@
         private System.Windows.Forms.Label labelPort;
         private System.Windows.Forms.Label labelExchange;
         private System.Windows.Forms.TextBox textBoxExchange;
+        private System.Windows.Forms.ComboBox comboBoxExchangeType;
+        private System.Windows.Forms.Label exchangeTypeLabel;
     }
 }

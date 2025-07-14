@@ -103,7 +103,7 @@ namespace Producer
                         arguments: null);
                     var body = Encoding.UTF8.GetBytes(json);
 
-                    channel.ExchangeDeclare(exchange: ConfigurationManager.AppSettings["Exchange"], type: ExchangeType.Direct);
+                    channel.ExchangeDeclare(exchange: ConfigurationManager.AppSettings["Exchange"], type: ConfigurationManager.AppSettings["ExchangeType"]);
 
                     channel.BasicPublish(exchange: ConfigurationManager.AppSettings["Exchange"],
                         routingKey: key,
