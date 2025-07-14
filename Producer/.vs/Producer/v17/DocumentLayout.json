@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "D:\\Practice\\C#apps\\RMQapp\\Producer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D4AD9477-186F-4207-8E57-5CDFE19442AB}|Producer\\Producer.csproj|D:\\Practice\\C#apps\\RMQapp\\Producer\\producer\\formsettings.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D4AD9477-186F-4207-8E57-5CDFE19442AB}|Producer\\Producer.csproj|d:\\practice\\c#apps\\rmqapp\\producer\\producer\\formsettings.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4AD9477-186F-4207-8E57-5CDFE19442AB}|Producer\\Producer.csproj|solutionrelative:producer\\formsettings.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,19 +11,19 @@
       "RelativeMoniker": "D:0:0:{D4AD9477-186F-4207-8E57-5CDFE19442AB}|Producer\\Producer.csproj|solutionrelative:producer\\strings.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4AD9477-186F-4207-8E57-5CDFE19442AB}|Producer\\Producer.csproj|d:\\practice\\c#apps\\rmqapp\\producer\\producer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D4AD9477-186F-4207-8E57-5CDFE19442AB}|Producer\\Producer.csproj|D:\\Practice\\C#apps\\RMQapp\\Producer\\producer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4AD9477-186F-4207-8E57-5CDFE19442AB}|Producer\\Producer.csproj|solutionrelative:producer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4AD9477-186F-4207-8E57-5CDFE19442AB}|Producer\\Producer.csproj|d:\\practice\\c#apps\\rmqapp\\producer\\producer\\formsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D4AD9477-186F-4207-8E57-5CDFE19442AB}|Producer\\Producer.csproj|D:\\Practice\\C#apps\\RMQapp\\Producer\\producer\\formsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4AD9477-186F-4207-8E57-5CDFE19442AB}|Producer\\Producer.csproj|solutionrelative:producer\\formsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4AD9477-186F-4207-8E57-5CDFE19442AB}|Producer\\Producer.csproj|d:\\practice\\c#apps\\rmqapp\\producer\\producer\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{D4AD9477-186F-4207-8E57-5CDFE19442AB}|Producer\\Producer.csproj|D:\\Practice\\C#apps\\RMQapp\\Producer\\producer\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{D4AD9477-186F-4207-8E57-5CDFE19442AB}|Producer\\Producer.csproj|solutionrelative:producer\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4AD9477-186F-4207-8E57-5CDFE19442AB}|Producer\\Producer.csproj|d:\\practice\\c#apps\\rmqapp\\producer\\producer\\formsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D4AD9477-186F-4207-8E57-5CDFE19442AB}|Producer\\Producer.csproj|D:\\Practice\\C#apps\\RMQapp\\Producer\\producer\\formsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D4AD9477-186F-4207-8E57-5CDFE19442AB}|Producer\\Producer.csproj|solutionrelative:producer\\formsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -46,8 +46,7 @@
               "RelativeToolTip": "Producer\\Form1.cs",
               "ViewState": "AgIAAGgAAAAAAAAAAAAgwG4AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T13:31:46.785Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-14T13:31:46.785Z"
             },
             {
               "$type": "Document",
@@ -59,8 +58,7 @@
               "RelativeToolTip": "Producer\\App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-07-14T13:27:49.825Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-14T13:27:49.825Z"
             },
             {
               "$type": "Document",
@@ -72,8 +70,7 @@
               "RelativeToolTip": "Producer\\FormSettings.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAIwEoAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T13:27:41.44Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-14T13:27:41.44Z"
             },
             {
               "$type": "Document",
@@ -84,8 +81,7 @@
               "ToolTip": "D:\\Practice\\C#apps\\RMQapp\\Producer\\Producer\\FormSettings.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "Producer\\FormSettings.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T13:17:08.272Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+              "WhenOpened": "2025-07-14T13:17:08.272Z"
             },
             {
               "$type": "Document",
@@ -95,7 +91,7 @@
               "RelativeDocumentMoniker": "Producer\\FormSettings.Designer.cs",
               "ToolTip": "D:\\Practice\\C#apps\\RMQapp\\Producer\\Producer\\FormSettings.Designer.cs",
               "RelativeToolTip": "Producer\\FormSettings.Designer.cs",
-              "ViewState": "AgIAAJsAAAAAAAAAAAAAAKQAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAKQAAAAAAAAAAAAAAKQAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-13T22:21:56.693Z",
               "EditorCaption": ""
@@ -109,8 +105,7 @@
               "ToolTip": "D:\\Practice\\C#apps\\RMQapp\\Producer\\Producer\\Strings.resx",
               "RelativeToolTip": "Producer\\Strings.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-07-13T09:44:01.329Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-13T09:44:01.329Z"
             }
           ]
         }
