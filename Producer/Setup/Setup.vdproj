@@ -1178,7 +1178,7 @@
             }
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_73237A040ADF45F88656436EF62EBA13"
             {
-            "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
+            "DefaultLocation" = "8:[ProgramFilesFolder]"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
