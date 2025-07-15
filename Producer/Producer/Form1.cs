@@ -120,8 +120,7 @@ namespace Producer
             {
                 using (var channel = connection.CreateModel())
                 {
-                    channel.QueueDeclare(queue: key,
-                        exclusive: false,
+                    channel.QueueDeclare(queue: key,                        
                         durable: true,
                         autoDelete: false,
                         arguments: null);

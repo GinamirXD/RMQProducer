@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "D:\\Practice\\C#apps\\RMQappClone\\RMQProducer\\Producer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D4AD9477-186F-4207-8E57-5CDFE19442AB}|Producer\\Producer.csproj|d:\\practice\\c#apps\\rmqappclone\\rmqproducer\\producer\\producer\\localizationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4AD9477-186F-4207-8E57-5CDFE19442AB}|Producer\\Producer.csproj|solutionrelative:producer\\localizationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D4AD9477-186F-4207-8E57-5CDFE19442AB}|Producer\\Producer.csproj|D:\\Practice\\C#apps\\RMQappClone\\RMQProducer\\Producer\\producer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4AD9477-186F-4207-8E57-5CDFE19442AB}|Producer\\Producer.csproj|solutionrelative:producer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4AD9477-186F-4207-8E57-5CDFE19442AB}|Producer\\Producer.csproj|d:\\practice\\c#apps\\rmqappclone\\rmqproducer\\producer\\producer\\formuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D4AD9477-186F-4207-8E57-5CDFE19442AB}|Producer\\Producer.csproj|d:\\practice\\c#apps\\rmqappclone\\rmqproducer\\producer\\producer\\localizationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4AD9477-186F-4207-8E57-5CDFE19442AB}|Producer\\Producer.csproj|solutionrelative:producer\\localizationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4AD9477-186F-4207-8E57-5CDFE19442AB}|Producer\\Producer.csproj|D:\\Practice\\C#apps\\RMQappClone\\RMQProducer\\Producer\\producer\\formuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4AD9477-186F-4207-8E57-5CDFE19442AB}|Producer\\Producer.csproj|solutionrelative:producer\\formuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{D4AD9477-186F-4207-8E57-5CDFE19442AB}|Producer\\Producer.csproj|solutionrelative:producer\\formsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4AD9477-186F-4207-8E57-5CDFE19442AB}|Producer\\Producer.csproj|d:\\practice\\c#apps\\rmqappclone\\rmqproducer\\producer\\producer\\formsettings.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D4AD9477-186F-4207-8E57-5CDFE19442AB}|Producer\\Producer.csproj|D:\\Practice\\C#apps\\RMQappClone\\RMQProducer\\Producer\\producer\\formsettings.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4AD9477-186F-4207-8E57-5CDFE19442AB}|Producer\\Producer.csproj|solutionrelative:producer\\formsettings.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -38,17 +38,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "LocalizationManager.cs",
               "DocumentMoniker": "D:\\Practice\\C#apps\\RMQappClone\\RMQProducer\\Producer\\Producer\\LocalizationManager.cs",
               "RelativeDocumentMoniker": "Producer\\LocalizationManager.cs",
               "ToolTip": "D:\\Practice\\C#apps\\RMQappClone\\RMQProducer\\Producer\\Producer\\LocalizationManager.cs",
               "RelativeToolTip": "Producer\\LocalizationManager.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwCcAAABJAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwCcAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-15T09:13:00.13Z",
               "EditorCaption": ""
@@ -63,18 +63,17 @@
               "RelativeToolTip": "Producer\\FormUser.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAAADEAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T09:08:08.034Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-15T09:08:08.034Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\Practice\\C#apps\\RMQappClone\\RMQProducer\\Producer\\Producer\\Form1.cs",
               "RelativeDocumentMoniker": "Producer\\Form1.cs",
               "ToolTip": "D:\\Practice\\C#apps\\RMQappClone\\RMQProducer\\Producer\\Producer\\Form1.cs",
               "RelativeToolTip": "Producer\\Form1.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAuwFwAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAAHoAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-14T13:31:46.785Z",
               "EditorCaption": ""
@@ -89,8 +88,7 @@
               "RelativeToolTip": "Producer\\FormSettings.cs",
               "ViewState": "AgIAAEIAAAAAAAAAAAAAAFcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T13:27:41.44Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-14T13:27:41.44Z"
             },
             {
               "$type": "Document",
@@ -101,8 +99,7 @@
               "ToolTip": "D:\\Practice\\C#apps\\RMQappClone\\RMQProducer\\Producer\\Producer\\FormSettings.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "Producer\\FormSettings.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T13:17:08.272Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+              "WhenOpened": "2025-07-14T13:17:08.272Z"
             },
             {
               "$type": "Document",
@@ -114,8 +111,7 @@
               "RelativeToolTip": "Producer\\FormSettings.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T22:21:56.693Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-13T22:21:56.693Z"
             },
             {
               "$type": "Document",
@@ -126,8 +122,7 @@
               "ToolTip": "D:\\Practice\\C#apps\\RMQappClone\\RMQProducer\\Producer\\Producer\\Strings.resx",
               "RelativeToolTip": "Producer\\Strings.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-07-13T09:44:01.329Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-13T09:44:01.329Z"
             }
           ]
         }
