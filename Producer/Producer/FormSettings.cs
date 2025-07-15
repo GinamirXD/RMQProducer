@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
+using System.IO;
 namespace Producer
 {
     public partial class FormSettings : Form
@@ -63,7 +64,28 @@ namespace Producer
             Exchange = textBoxExchange.Text;
             ExchangeType = comboBoxExchangeType.SelectedItem.ToString();
 
-            Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            string appDataConfigPath = Path.Combine(
+            Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+            "RMQProducer",
+            "Producer.exe.config"
+            );
+
+            if (!File.Exists(appDataConfigPath))
+            {
+                MessageBox.Show("Конфигурационный файл не был найден", $"{Strings.error}", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            var configMap = new ExeConfigurationFileMap
+            {
+                ExeConfigFilename = appDataConfigPath
+            };
+
+            Configuration config = ConfigurationManager.OpenMappedExeConfiguration(
+                configMap,
+                ConfigurationUserLevel.None
+            );
+
             config.AppSettings.Settings["ConnectionType"].Value = ConnectionType;
             config.AppSettings.Settings["VHost"].Value = VHost;
             config.AppSettings.Settings["HostName"].Value = HostName;

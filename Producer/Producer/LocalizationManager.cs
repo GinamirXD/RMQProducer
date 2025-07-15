@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Producer
 {
@@ -20,12 +22,48 @@ namespace Producer
 
         public static string GetSavedLanguage()
         {
-            return ConfigurationManager.AppSettings["Language"] ?? "en";
+            string appDataConfigPath = Path.Combine(
+            Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+            "RMQProducer",
+            "Producer.exe.config"
+            );
+
+            var configMap = new ExeConfigurationFileMap
+            {
+                ExeConfigFilename = appDataConfigPath
+            };
+
+            Configuration config = ConfigurationManager.OpenMappedExeConfiguration(
+                configMap,
+                ConfigurationUserLevel.None
+            );
+            return config.AppSettings.Settings["Language"].Value ?? "en";
         }
 
         public static void SaveLanguage(string langCode)
         {
-            var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            string appDataConfigPath = Path.Combine(
+            Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+            "RMQProducer",
+            "Producer.exe.config"
+            );
+
+            if (!File.Exists(appDataConfigPath))
+            {
+                MessageBox.Show("Конфигурационный файл не был найден", $"{Strings.error}", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            var configMap = new ExeConfigurationFileMap
+            {
+                ExeConfigFilename = appDataConfigPath
+            };
+
+            Configuration config = ConfigurationManager.OpenMappedExeConfiguration(
+                configMap,
+                ConfigurationUserLevel.None
+            );
+            
             config.AppSettings.Settings["Language"].Value = langCode;
             config.Save(ConfigurationSaveMode.Modified);
             ConfigurationManager.RefreshSection("appSettings");

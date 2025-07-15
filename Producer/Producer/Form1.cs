@@ -13,6 +13,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Configuration;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using System.IO;
 
 namespace Producer
 {
@@ -69,13 +70,36 @@ namespace Producer
         
         private void SendMessageToRabbitMQ(string key, string json)
         {
-            string connectionType = ConfigurationManager.AppSettings["ConnectionType"];
-            string vhost = ConfigurationManager.AppSettings["VHost"];
-            string userName = ConfigurationManager.AppSettings["UserName"];
-            string password = ConfigurationManager.AppSettings["Password"];
-            string host = ConfigurationManager.AppSettings["HostName"];
-            string uri = ConfigurationManager.AppSettings["URI"];
-            string port = ConfigurationManager.AppSettings["Port"];
+           string appDataConfigPath = Path.Combine(
+           Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+           "RMQProducer",
+           "Producer.exe.config"
+            );
+
+            if (!File.Exists(appDataConfigPath))
+            {
+                MessageBox.Show("Конфигурационный файл не был найден", $"{Strings.error}", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            var configMap = new ExeConfigurationFileMap
+            {
+                ExeConfigFilename = appDataConfigPath
+            };
+
+            Configuration config = ConfigurationManager.OpenMappedExeConfiguration(
+                configMap,
+                ConfigurationUserLevel.None
+            );
+
+
+            string connectionType = config.AppSettings.Settings["ConnectionType"].Value;
+            string vhost = config.AppSettings.Settings["VHost"].Value;
+            string userName = config.AppSettings.Settings["UserName"].Value;
+            string password = config.AppSettings.Settings["Password"].Value;
+            string host = config.AppSettings.Settings["HostName"].Value;
+            string uri = config.AppSettings.Settings["URI"].Value;
+            string port = config.AppSettings.Settings["Port"].Value ;
 
             var factory = new ConnectionFactory();
 
@@ -103,9 +127,9 @@ namespace Producer
                         arguments: null);
                     var body = Encoding.UTF8.GetBytes(json);
 
-                    channel.ExchangeDeclare(exchange: ConfigurationManager.AppSettings["Exchange"], type: ConfigurationManager.AppSettings["ExchangeType"]);
+                    channel.ExchangeDeclare(exchange: config.AppSettings.Settings["Exchange"].Value, type: config.AppSettings.Settings["ExchangeType"].Value);
 
-                    channel.BasicPublish(exchange: ConfigurationManager.AppSettings["Exchange"],
+                    channel.BasicPublish(exchange: config.AppSettings.Settings["Exchange"].Value,
                         routingKey: key,
                         basicProperties: null,
                         body: body);
