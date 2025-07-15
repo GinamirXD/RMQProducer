@@ -61,6 +61,7 @@ namespace Producer
             this.textBoxUser.Name = "textBoxUser";
             this.textBoxUser.Size = new System.Drawing.Size(188, 22);
             this.textBoxUser.TabIndex = 2;
+            this.textBoxUser.Text = AppConfigManager.Config.AppSettings.Settings["UserName"].Value;
             // 
             // textBoxPassword
             // 
@@ -68,6 +69,7 @@ namespace Producer
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(188, 22);
             this.textBoxPassword.TabIndex = 3;
+            this.textBoxPassword.Text = AppConfigManager.Config.AppSettings.Settings["Password"].Value;
             // 
             // buttonSave
             // 

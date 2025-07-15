@@ -132,6 +132,9 @@
   <data name="buttonUser" xml:space="preserve">
     <value>Пользователь</value>
   </data>
+  <data name="configError" xml:space="preserve">
+    <value>Файл конфигурации не найден.</value>
+  </data>
   <data name="connectionSettings" xml:space="preserve">
     <value>Настройки подключения</value>
   </data>

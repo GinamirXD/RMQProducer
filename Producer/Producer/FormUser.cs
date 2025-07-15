@@ -49,9 +49,9 @@ namespace Producer
                 ConfigurationUserLevel.None
             );
 
-            config.AppSettings.Settings["UserName"].Value = UserName;
-            config.AppSettings.Settings["Password"].Value = Password;
-            config.Save(ConfigurationSaveMode.Modified);
+            AppConfigManager.Config.AppSettings.Settings["UserName"].Value = UserName;
+            AppConfigManager.Config.AppSettings.Settings["Password"].Value = Password;
+            AppConfigManager.Config.Save(ConfigurationSaveMode.Modified);
             ConfigurationManager.RefreshSection("appSettings");
 
             this.DialogResult = DialogResult.OK;

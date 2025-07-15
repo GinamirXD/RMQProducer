@@ -106,6 +106,15 @@ namespace Producer {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Configuration file not found..
+        /// </summary>
+        internal static string configError {
+            get {
+                return ResourceManager.GetString("configError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Connection settings.
         /// </summary>
         internal static string connectionSettings {

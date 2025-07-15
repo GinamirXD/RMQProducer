@@ -64,7 +64,7 @@ namespace Producer
             Exchange = textBoxExchange.Text;
             ExchangeType = comboBoxExchangeType.SelectedItem.ToString();
 
-            string appDataConfigPath = Path.Combine(
+            /*string appDataConfigPath = Path.Combine(
             Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
             "RMQProducer",
             "Producer.exe.config"
@@ -84,16 +84,16 @@ namespace Producer
             Configuration config = ConfigurationManager.OpenMappedExeConfiguration(
                 configMap,
                 ConfigurationUserLevel.None
-            );
+            );*/
 
-            config.AppSettings.Settings["ConnectionType"].Value = ConnectionType;
-            config.AppSettings.Settings["VHost"].Value = VHost;
-            config.AppSettings.Settings["HostName"].Value = HostName;
-            config.AppSettings.Settings["Port"].Value = Port;
-            config.AppSettings.Settings["URI"].Value = URI;
-            config.AppSettings.Settings["Exchange"].Value = Exchange;
-            config.AppSettings.Settings["ExchangeType"].Value = ExchangeType;
-            config.Save(ConfigurationSaveMode.Modified);
+            AppConfigManager.Config.AppSettings.Settings["ConnectionType"].Value = ConnectionType;
+            AppConfigManager.Config.AppSettings.Settings["VHost"].Value = VHost;
+            AppConfigManager.Config.AppSettings.Settings["HostName"].Value = HostName;
+            AppConfigManager.Config.AppSettings.Settings["Port"].Value = Port;
+            AppConfigManager.Config.AppSettings.Settings["URI"].Value = URI;
+            AppConfigManager.Config.AppSettings.Settings["Exchange"].Value = Exchange;
+            AppConfigManager.Config.AppSettings.Settings["ExchangeType"].Value = ExchangeType;
+            AppConfigManager.Config.Save(ConfigurationSaveMode.Modified);
             ConfigurationManager.RefreshSection("appSettings");
 
             this.DialogResult = DialogResult.OK;

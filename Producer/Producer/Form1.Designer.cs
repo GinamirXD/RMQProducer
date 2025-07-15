@@ -45,7 +45,7 @@ namespace Producer
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxKey.Location = new System.Drawing.Point(177, 15);
             this.textBoxKey.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxKey.MaxLength = 15;
+            this.textBoxKey.MaxLength = 20;
             this.textBoxKey.Name = "textBoxKey";
             this.textBoxKey.Size = new System.Drawing.Size(297, 22);
             this.textBoxKey.TabIndex = 1;

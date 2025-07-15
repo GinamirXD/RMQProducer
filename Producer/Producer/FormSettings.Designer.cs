@@ -76,6 +76,7 @@ namespace Producer
             this.textBoxConnection1.Name = "textBoxConnection1";
             this.textBoxConnection1.Size = new System.Drawing.Size(346, 22);
             this.textBoxConnection1.TabIndex = 3;
+            this.textBoxConnection1.Text = AppConfigManager.Config.AppSettings.Settings["Vhost"].Value;
             // 
             // labelConnectionURI
             // 
@@ -94,6 +95,7 @@ namespace Producer
             this.textBoxConnectionURI.Size = new System.Drawing.Size(346, 22);
             this.textBoxConnectionURI.TabIndex = 3;
             this.textBoxConnectionURI.Visible = false;
+            this.textBoxConnectionURI.Text = AppConfigManager.Config.AppSettings.Settings["URI"].Value;
             // 
             // buttonSave
             // 
@@ -119,6 +121,7 @@ namespace Producer
             this.textBoxHost.Name = "textBoxHost";
             this.textBoxHost.Size = new System.Drawing.Size(346, 22);
             this.textBoxHost.TabIndex = 0;
+            this.textBoxHost.Text = AppConfigManager.Config.AppSettings.Settings["HostName"].Value;
             // 
             // labelPort
             // 
@@ -135,6 +138,7 @@ namespace Producer
             this.textBoxPort.Name = "textBoxPort";
             this.textBoxPort.Size = new System.Drawing.Size(346, 22);
             this.textBoxPort.TabIndex = 6;
+            this.textBoxPort.Text = AppConfigManager.Config.AppSettings.Settings["Port"].Value;
             // 
             // labelExchange
             // 
@@ -151,6 +155,7 @@ namespace Producer
             this.textBoxExchange.Name = "textBoxExchange";
             this.textBoxExchange.Size = new System.Drawing.Size(346, 22);
             this.textBoxExchange.TabIndex = 8;
+            this.textBoxExchange.Text = AppConfigManager.Config.AppSettings.Settings["Exchange"].Value;
             // 
             // comboBoxExchangeType
             // 
@@ -165,7 +170,7 @@ namespace Producer
                                                                 "topic",
                                                                 "headers"});
             this.comboBoxExchangeType.DropDownStyle = ComboBoxStyle.DropDownList;
-            this.comboBoxExchangeType.SelectedIndex = 0;
+            this.comboBoxExchangeType.SelectedItem = AppConfigManager.Config.AppSettings.Settings["ExchangeType"].Value;
             // 
             // exchangeTypeLabel
             // 

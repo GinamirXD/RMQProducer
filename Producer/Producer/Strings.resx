@@ -132,6 +132,9 @@
   <data name="buttonUser" xml:space="preserve">
     <value>User</value>
   </data>
+  <data name="configError" xml:space="preserve">
+    <value>Configuration file not found.</value>
+  </data>
   <data name="connectionSettings" xml:space="preserve">
     <value>Connection settings</value>
   </data>

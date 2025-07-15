@@ -42,7 +42,7 @@ namespace Producer
 
         public static void SaveLanguage(string langCode)
         {
-            string appDataConfigPath = Path.Combine(
+            /*string appDataConfigPath = Path.Combine(
             Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
             "RMQProducer",
             "Producer.exe.config"
@@ -62,10 +62,10 @@ namespace Producer
             Configuration config = ConfigurationManager.OpenMappedExeConfiguration(
                 configMap,
                 ConfigurationUserLevel.None
-            );
+            );*/
             
-            config.AppSettings.Settings["Language"].Value = langCode;
-            config.Save(ConfigurationSaveMode.Modified);
+            AppConfigManager.Config.AppSettings.Settings["Language"].Value = langCode;
+            AppConfigManager.Config.Save(ConfigurationSaveMode.Modified);
             ConfigurationManager.RefreshSection("appSettings");
         }
     }
