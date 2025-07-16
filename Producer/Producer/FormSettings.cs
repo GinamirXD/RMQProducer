@@ -64,28 +64,6 @@ namespace Producer
             Exchange = textBoxExchange.Text;
             ExchangeType = comboBoxExchangeType.SelectedItem.ToString();
 
-            /*string appDataConfigPath = Path.Combine(
-            Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
-            "RMQProducer",
-            "Producer.exe.config"
-            );
-
-            if (!File.Exists(appDataConfigPath))
-            {
-                MessageBox.Show("Конфигурационный файл не был найден", $"{Strings.error}", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            var configMap = new ExeConfigurationFileMap
-            {
-                ExeConfigFilename = appDataConfigPath
-            };
-
-            Configuration config = ConfigurationManager.OpenMappedExeConfiguration(
-                configMap,
-                ConfigurationUserLevel.None
-            );*/
-
             AppConfigManager.Config.AppSettings.Settings["ConnectionType"].Value = ConnectionType;
             AppConfigManager.Config.AppSettings.Settings["VHost"].Value = VHost;
             AppConfigManager.Config.AppSettings.Settings["HostName"].Value = HostName;

@@ -70,28 +70,6 @@ namespace Producer
         
         private void SendMessageToRabbitMQ(string key, string json)
         {
-           /*string appDataConfigPath = Path.Combine(
-           Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
-           "RMQProducer",
-           "Producer.exe.config"
-            );
-
-            if (!File.Exists(appDataConfigPath))
-            {
-                MessageBox.Show($"{Strings.configError}", $"{Strings.error}", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            var configMap = new ExeConfigurationFileMap
-            {
-                ExeConfigFilename = appDataConfigPath
-            };
-
-            Configuration config = ConfigurationManager.OpenMappedExeConfiguration(
-                configMap,
-                ConfigurationUserLevel.None
-            );*/
-
             string connectionType = AppConfigManager.Config.AppSettings.Settings["ConnectionType"].Value;
             string vhost = AppConfigManager.Config.AppSettings.Settings["VHost"].Value;
             string userName = AppConfigManager.Config.AppSettings.Settings["UserName"].Value;

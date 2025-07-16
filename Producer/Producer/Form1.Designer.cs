@@ -114,6 +114,7 @@ namespace Producer
             this.buttonLanguage.Text = global::Producer.Strings.buttonLanguage;
             this.buttonLanguage.UseVisualStyleBackColor = true;
             this.buttonLanguage.Click += new System.EventHandler(this.ButtonLanguage_Click);
+            this.buttonLanguage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             // 
             // Form1
             // 
